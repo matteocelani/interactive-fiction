@@ -13,13 +13,12 @@ The answers are in a two-dimensional array. For example:
  [ca, cb, cc, cd],  // game 3
  [da, db, dc, dd]]  // game 4
 ```
+⚠️ For simplicity, the array starts at index 1.
 
 With the function `setAnswer` you can set a crypted answer for a specific question. 
 ```solidity
  function setAnswer(bytes32 _answer, uint8 _game, uint8 _index)
  ```
-⚠️ For simplicity, the array starts at index 1.\
-
 
 Each game has a start date, which you can set with the function `setStartGame`.
 ```solidity
