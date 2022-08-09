@@ -5,7 +5,7 @@ This folder contains the smart contract for the creation of the crypted answers 
 
 ## ⚙️ Setting the Game 
 
-The answers are a in a two-dimensional array. For example:
+The answers are in a two-dimensional array. For example:
 
 ```javascript
 [[aa, ab, ac, ad],  // game 1
@@ -18,6 +18,8 @@ With the function `setAnswer` you can set a crypted answer for a specific questi
 ```solidity
  function setAnswer(bytes32 _answer, uint8 _game, uint8 _index)
  ```
+⚠️ For simplicity, the array starts at index 1.\
+
 
 Each game has a start date, which you can set with the function `setStartGame`.
 ```solidity
@@ -29,6 +31,8 @@ All games are no longer accessible after the end date, which can be set with the
 ```solidity
  function setEndGame(uint _timestamp)
  ```
+
+ These are the necessary settings to start the game.
 
 ## 📝 Checking Answers
 
